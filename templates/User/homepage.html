@@ -1,0 +1,16 @@
+{% extends 'Base/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='homepage.css') }}">
+<div class="home-container">
+    <div class="user-info">
+        <div class="card-header">
+            <img src="{{ url_for('static', filename='uploads/' ~ user.image_filename) }}"
+                 alt="Profile Image" class="profile-img">
+        </div>
+        <p><strong>Name: {{ user.name }} </p> </strong>
+        <p><strong>Age:</strong> {{ age }} Years Old</p>
+        <p><strong>Address:</strong> {{ user.address }}</p>
+    </div>
+</div>
+{% endblock %}
