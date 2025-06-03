@@ -8,7 +8,7 @@
             <img src="{{ url_for('static', filename='uploads/' ~ user.image_filename) }}"
                  alt="Profile Image" class="profile-img">
         </div>
-        <p><strong>Name: {{ user.name }} </p> </strong>
+        <p><strong>Name: </strong> {{ user.name }} </p> 
         <p><strong>Age:</strong> {{ age }} Years Old</p>
         <p><strong>Address:</strong> {{ user.address }}</p>
     </div>

@@ -1,13 +1,12 @@
-
 .register-container {
     max-width: 400px;
     margin: 4rem auto;
     padding: 2rem 2.5rem;
-    background: #00ccff;
+    background: #83e6ff;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 .register-container h2 {
@@ -15,24 +14,37 @@
     font-weight: bold;
     font-size: 1.8rem;
     color: #333;
+    text-align: center; 
+}
+
+.register-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.3rem;
+}
+
+.register-form label {
+    width: 110px; 
+    font-weight: 600;
+    color: #222;
+    margin-right: 15px;
 }
 
 .register-form .form-control {
-    width: 100%;
+    flex: 1; 
     padding: 12px 15px;
-    margin-bottom: 1.3rem;
     font-size: 1rem;
     border: 1.5px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
+    margin-bottom: 0; 
 }
 
 .register-form .form-control:focus {
     border-color: #007bff;
     outline: none;
 }
-
 
 .register-form .btn-register {
     padding: 12px 30px;
