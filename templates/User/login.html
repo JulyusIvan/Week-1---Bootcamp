@@ -7,14 +7,23 @@
 <div class="login-container">
   <form method="POST" class="login-form">
     <h2>Log In</h2>
-    <div class="input-group">
-      <input type="text" name="username" placeholder="Username" required autocomplete="username" />
-      <span class="input-icon">👤</span>
+
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <div class="input-wrapper">
+        <input type="text" id="username" name="username" required autocomplete="username" />
+        <span class="input-icon">👤</span>
+      </div>
     </div>
-    <div class="input-group">
-      <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
-      <span class="input-icon">🔒</span>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <div class="input-wrapper">
+        <input type="password" id="password" name="password" required autocomplete="current-password" />
+        <span class="input-icon">🔒</span>
+      </div>
     </div>
+
     <div class="form-footer">
       <p class="register-link"><a href="{{ url_for('register') }}">Register now</a></p>
       <button type="submit" class="btn-login">Log In</button>
